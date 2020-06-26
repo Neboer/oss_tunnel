@@ -1,13 +1,9 @@
 #pragma once
 
-struct data_piece {
-    char *content;
-    int index;
-    int capacity;
+#include <string>
 
-    void push(char t);
+using namespace std;
 
-    explicit data_piece(int initial_size);
+string *binary_to_utf8(string *input_binary_data);
 
-    ~data_piece();
-};
+string *utf8_to_binary(string *input_utf8_data);
